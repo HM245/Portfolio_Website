@@ -1,0 +1,102 @@
+*{margin: 0;
+padding: 0;}
+header{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  width:100%;
+}
+.navbar{
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 5px groove whitesmoke;
+    border-radius: 10px;
+    padding: 16px;
+}
+a{
+  /* margin-top: 5px; */
+  padding-inline: 6vw;
+  padding-top: 16px;
+  float: inline-start;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  margin-left: -34px;
+}
+a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
+}
+.logo{
+  font-weight: bold;
+  font-size: small;
+  float: right;
+  border: 5px solid whitesmoke;
+  border-radius: 25px;
+  padding: 6px;
+  margin-right: -10px;
+}
+
+h1{
+  margin-top: 10vh;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 2px 3px;
+  font-size: xxx-large;
+  font-style: italic;
+}
+#dp{
+  float: none;
+  display: grid;
+  margin-top: 12vh;
+  border: 20px silver;
+  border-style: double;
+  border-radius: 168px;
+}
+#dp:hover{
+  transition: 1s;
+  transition-timing-function:ease;
+  transform:rotateY(720deg);
+}
+.links{
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+}
+img{
+  vertical-align: middle;
+}
+.links a{
+  padding-inline: 100px;
+  color: black;
+  margin-inline: 31px;
+}
+p{
+  text-align: center;
+  font-style: italic;
+  font-size: medium;
+  font-weight: 900;
+}
+.lan a{
+  padding-inline: 100px;
+  color: black;
+  margin-inline: 8px;
+}
+.lan{
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+}
+pre{
+  float: inline-start;
+  font-size:x-large;
+  font-weight: 800;
+  font-style: italic;
+}
