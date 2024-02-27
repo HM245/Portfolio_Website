@@ -17,7 +17,7 @@ header{
 }
 a{
   /* margin-top: 5px; */
-  padding-inline: 8vw;
+  padding-inline: 7.5vw;
   padding-top: 16px;
   float: inline-start;
   font-weight: bolder;
@@ -48,7 +48,7 @@ h1{
   text-align: center;
   text-transform: capitalize;
   text-shadow: 1px 2px 3px;
-  font-size: xxx-large;
+  font-size: xx-large;
   font-style: italic;
 }
 #dp{
