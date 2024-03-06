@@ -82,7 +82,7 @@ p{
   text-align: center;
   font-style: italic;
   font-size: medium;
-  font-weight: 900;
+  font-weight: 500;
 }
 .lan a{
   padding-inline: 100px;
@@ -97,6 +97,6 @@ p{
 pre{
   float: inline-start;
   font-size:x-large;
-  font-weight: 800;
+  font-weight: 400;
   font-style: italic;
 }
