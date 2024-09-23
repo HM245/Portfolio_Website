@@ -43,13 +43,13 @@ a:hover{
   margin-right: -10px;
 }
 
-h1{
-  margin-top: 10vh;
-  text-align: center;
-  text-transform: capitalize;
-  text-shadow: 1px 2px 3px;
-  font-size: xx-large;
-  font-style: italic;
+h1 {
+    margin-top: 25vh;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 3px;
+    font-size: xx-large;
+    font-style: italic;
 }
 #dp{
   float: none;
