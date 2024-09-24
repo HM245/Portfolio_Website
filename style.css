@@ -64,19 +64,19 @@ h1 {
   transition-timing-function:ease;
   transform:rotateY(720deg);
 }
-.links{
-  /* border: 2px solid red; */
+.links {
   text-align: center;
-  width: 100vw;
-  height: 35vh;
+  max-width: 50vw;
+  height: 72vh;
 }
 img{
   vertical-align: middle;
 }
-.links a{
+.links a {
   padding-inline: 65px;
   color: black;
   margin-inline: 31px;
+  padding-block: 6vh;
 }
 p{
   padding-inline: 10vw;
@@ -85,15 +85,15 @@ p{
   font-size: small;
   font-weight: 600;
 }
-.lan a{
+.lan a {
   padding-inline: 80px;
   color: black;
   margin-inline: 8px;
+  margin-block: 10vh;
 }
 .lan{
   text-align: center;
-  width: 100vw;
-  height: 35vh;
+  max-width: 60vw;
 }
 pre{
   float: inline-start;
