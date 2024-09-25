@@ -7,24 +7,22 @@ header{
   position: fixed;
   width:100%;
 }
-.navbar{
-    height: 50px;
-    color: white;
-    background-color: black;
-    border: 5px groove whitesmoke;
-    border-radius: 10px;
-    padding: 16px;
+.navbar {
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: 5px groove whitesmoke;
+  border-radius: 10px;
+  padding: 16px;
 }
-a{
-  /* margin-top: 5px; */
-  padding-inline: 7.5vw;
+.navbar a {
+  margin-inline: 1.5vw;
   padding-top: 16px;
   float: inline-start;
   font-weight: bolder;
   font-style: italic;
   text-decoration: none;
   color: white;
-  margin-left: -34px;
 }
 a:hover{
     color: white;
@@ -33,14 +31,18 @@ a:hover{
     transition-timing-function:ease-out;
     transform: scale(1.2);
 }
-.logo{
+.logo {
+  float: inline-end;
+  width: 30px;
+  height: 30px;
+}
+.logo img {
   font-weight: bold;
   font-size: small;
-  float: right;
   border: 5px solid whitesmoke;
   border-radius: 25px;
   padding: 6px;
-  margin-right: -10px;
+  margin-top: -4vh;
 }
 
 h1 {
@@ -69,9 +71,6 @@ h1 {
   max-width: 60vw;
   height: 72vh;
 }
-img{
-  vertical-align: middle;
-}
 .links a {
   color: black;
   margin-inline: 31px;
@@ -92,11 +91,14 @@ p{
 }
 .lan{
   text-align: center;
-  max-width: 60vw;
+  /* max-width: 60vw; */
 }
 pre{
   float: inline-start;
   font-size:x-large;
   font-weight: 500;
   font-style: italic;
+}
+.lantext{
+  border: 5px solid whitesmoke;
 }
