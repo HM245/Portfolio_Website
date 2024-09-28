@@ -15,14 +15,15 @@ header{
   border-radius: 10px;
   padding: 16px;
 }
-.navbar a {
+.navbar a.btn {
   margin-inline: 1.5vw;
+  float: inline-start;
   font-weight: bolder;
   font-style: italic;
   text-decoration: none;
   color: white;
 }
-a:hover{
+.navbar a:hover{
   color: white;
   text-decoration:underline;
   transition: 0.3s;
@@ -31,19 +32,16 @@ a:hover{
 }
 .logo {
   float: inline-end;
+  margin-block: -10px;
 }
 .logo img {
-  font-weight: bold;
-  font-size: small;
   border: 5px solid whitesmoke;
   border-radius: 25px;
   padding: 3px;
-  margin-top: -2.5vh;
-  margin-block-start: -10px;
+  max-width: 2vw;
 }
-
 h1 {
-    margin-top: 45vh;
+    margin-block: 10vh;
     text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 2px 3px;
@@ -65,13 +63,47 @@ h1 {
 }
 .links {
   text-align: center;
-  max-width: 40vw;
-  height: 72vh;
+  max-width: 60vw;
+  height: 105vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 .links a {
   color: black;
-  margin-inline: 31px;
-  padding-block: 6vh;
+  margin-inline: 27px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.links a:hover{
+  text-decoration:underline;
+  transition: 0.3s;
+  transition-timing-function:ease-out;
+  transform: scale(1.2);
+}
+.Plinks {
+  text-align: center;
+  max-width: 60vw;
+  height: 70vh;
+}
+.Plinks a {
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Plinks a:hover{
+  text-decoration:underline;
+  transition: 0.3s;
+  transition-timing-function:ease-out;
+  transform: scale(1.2);
 }
 p{
   padding-inline: 10vw;
@@ -80,15 +112,29 @@ p{
   font-size: small;
   font-weight: 600;
 }
-.lan a {
-  padding-inline: 80px;
-  color: black;
-  margin-inline: 8px;
-  margin-block: 10vh;
-}
 .lan{
   text-align: center;
-  /* max-width: 60vw; */
+  max-width: 60vw;
+  height: 105vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lan a {
+  color: black;
+  margin-inline: 45px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lan a:hover{
+  text-decoration:underline;
+  transition: 0.3s;
+  transition-timing-function:ease-out;
+  transform: scale(1.2);
 }
 pre{
   float: inline-start;
@@ -97,5 +143,5 @@ pre{
   font-style: italic;
 }
 .lantext{
-  border: 5px solid whitesmoke;
+padding: 5px;
 }
