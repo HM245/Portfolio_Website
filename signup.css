@@ -8,59 +8,52 @@ body{
 header{
     margin: 0;
     padding: 0;
-    z-index: 1;
-    object-position: top;
     overflow: hidden;
     position: fixed;
     width:100%;
 }
-.navbar{
-      height: 50px;
-      color: white;
-      background-color: black;
-      border: 5px groove whitesmoke;
-      border-radius: 10px;
-      padding: 16px;
+.navbar {
+    height: 20px;
+    color: white;
+    background-color: black;
+    border: 5px groove whitesmoke;
+    border-radius: 10px;
+    padding: 16px;
 }
-a{
-    /* margin-top: 5px; */
-    padding-inline: 7.5vw;
-    padding-top: 16px;
+.navbar a.btn {
+    margin-inline: 1.5vw;
     float: inline-start;
     font-weight: bolder;
     font-style: italic;
     text-decoration: none;
     color: white;
-    margin-left: -34px;
 }
-a:hover{
-      color: white;
-      text-decoration:underline;
-      transition: 0.3s;
-      transition-timing-function:ease-out;
-      transform: scale(1.2);
+.navbar a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+    transition-timing-function:ease-out;
+    transform: scale(1.2);
 }
-.logo{
-    font-weight: bold;
-    font-size: small;
-    float: right;
+.logo {
+    float: inline-end;
+    margin-block: -10px;
+}
+.logo img {
     border: 5px solid whitesmoke;
     border-radius: 25px;
-    padding: 6px;
-    margin-right: -10px;
+    padding: 3px;
+    max-width: 2vw;
 }
-.box{
+.box {
     margin-block: 25vh;
-    object-position: center;
     box-shadow: whitesmoke inset 1px 1px 5px;
-    width: 60vw;
-    height: 65vh;
+    max-width: 60vw;
+    max-height: 70vh;
     border-radius: 10px;
-    /* border: 1px solid whitesmoke; */
     background: transparent;
-    backdrop-filter:blur(5px);
-    -webkit-backdrop-filter:blur(5px);
-}
+    backdrop-filter: blur(5px);
+  }
 h1{
     font-style: italic;
     font-size: xxx-large;

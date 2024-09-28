@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
     <header>
@@ -12,18 +16,25 @@
             <a href="index.html" class="btn">Home</a>
             <a href="#about" class="btn">About & Contact</a>
             <a href="Signup.html" class="btn">Signup</a>
-            <a href="#" class="logo"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="30px"></a>
+            <a href="#" data-toggle="popover" title="Hardik Mishra" data-content="I am a Front-End developer" data-placement="bottom" class="logo"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="25px"></a>
         </nav>
     </header>
     <br>
-    <center><div class="box">
-        <h1>Sign-Up</h1>
-        <ol>
-            <li><input type="text" placeholder="  Enter Email ID" id="Uname"></li>
-            <li><input type="password" placeholder="  Enter Your Password" id="password"></li>
-            <li><input type="password" placeholder="  Enter Your Password again" id="password"></li>
-        </ol>
-        <button type="submit">submit</button>
-    </div></center>
+    <center>
+        <div class="box">
+            <h1>Sign-Up</h1>
+            <ol>
+                <li><input type="text" placeholder="  Enter Email ID" id="Uname"></li>
+                <li><input type="password" placeholder="  Enter Your Password" id="password"></li>
+                <li><input type="password" placeholder="  Enter Your Password again" id="password"></li>
+            </ol>
+            <button type="submit">submit</button>
+    </center>
+    </div>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+    </script>
 </body>
 </html>
