@@ -1,9 +1,13 @@
-*{margin: 0;padding: 0;}
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     /* margin: 10vw; */
     background-image:url(realistic-background.avif);
     background-size:cover;  
     background-repeat:repeat-y;
+
 }
 header{
     margin: 0;
@@ -11,6 +15,7 @@ header{
     overflow: hidden;
     position: fixed;
     width:100%;
+    
 }
 .navbar {
     height: 20px;
@@ -84,7 +89,7 @@ ol{
     margin-block: 4vh;
     list-style:none ;
 }
-button{
+#submit{
     margin-block: 2vh;
     font-size: large;
     font-style: italic;
@@ -93,4 +98,35 @@ button{
     height: 5vh;
     border-style: inset;
     border-radius: 8px;
+}
+.Mycard_container{
+    box-sizing: border-box;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.Mycard{
+    background-color: aliceblue;
+    width: 55vw;
+    max-width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.photo{
+    max-width: 150px;
+}
+#close{
+    float: inline-end;
+    background-color: transparent;
+    margin: 20px;
+    font-size: xx-large;
+    border-radius: 10px;
+    width: 3vw;
 }

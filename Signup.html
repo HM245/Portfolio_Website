@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="btn">Home</a>
             <a href="#about" class="btn">About & Contact</a>
             <a href="Signup.html" class="btn">Signup</a>
-            <a href="#" data-toggle="popover" title="Hardik Mishra" data-content="I am a Front-End developer" data-placement="bottom" class="logo"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="25px"></a>
+            <a href="#" class="logo"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="25px"></a>
         </nav>
     </header>
     <br>
@@ -28,13 +26,26 @@
                 <li><input type="password" placeholder="  Enter Your Password" id="password"></li>
                 <li><input type="password" placeholder="  Enter Your Password again" id="password"></li>
             </ol>
-            <button type="submit">submit</button>
+            <button id="submit" type="submit">submit</button>
+        </div>
     </center>
+    <div class="Mycard_container">
+        <div class="Mycard">
+            <button id="close" type="close">⨯</button>
+            <br>
+            <img class="photo" src="IMG20240218224833_00.jpg" alt="H.M.">
+            <br>
+            <pre>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Ab, aliquam a cupiditate nemo esse excepturi sapiente,
+                iste consequatur assumenda magnam architecto voluptate ratione beatae,
+                perspiciatis culpa. Tempore deserunt itaque, 
+                doloribus deleniti aliquam eveniet vel rem sunt. 
+                Illo ratione consequuntur magnam expedita quia eos optio accusantium laudantium, quo consequatur in nam.
+                Necessitatibus qui eveniet ut totam quaerat?
+            </pre>
+        </div>
     </div>
-    <script>
-        $(document).ready(function(){
-          $('[data-toggle="popover"]').popover();   
-        });
-    </script>
 </body>
+
 </html>
