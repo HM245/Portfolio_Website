@@ -38,7 +38,7 @@ header{
   border: 5px solid whitesmoke;
   border-radius: 25px;
   padding: 3px;
-  max-width: 2vw;
+  max-width: 7vw;
 }
 h1 {
     margin-block: 10vh;
@@ -144,4 +144,53 @@ pre{
 }
 .lantext{
 padding: 5px;
+}
+.Mycard_container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color:rgba(0, 0, 0, 0.3);
+}
+.Mycard_container.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+.Mycard{
+  background-color: aliceblue;
+  width: 55vw;
+  max-width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.photo{
+  max-width: 150px;
+  max-height: 160px;
+  border-radius: 20px;
+  margin-inline: 22.8vw;
+}
+.mytext {
+  margin-inline: 5vw;
+  margin-block: 4vh;
+  font-size: small;
+  font-style: italic;
+  font-weight: bold;
+  padding-inline: 0vw;
+  text-align: left;
+}
+#close{
+  background-color: transparent;
+  margin: 20px;
+  font-size: xx-large;
+  border-radius: 10px;
+  max-width:30px;
 }

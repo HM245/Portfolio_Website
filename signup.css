@@ -48,7 +48,7 @@ header{
     border: 5px solid whitesmoke;
     border-radius: 25px;
     padding: 3px;
-    max-width: 2vw;
+    max-width: 7vw;
 }
 .box {
     margin-block: 25vh;
@@ -89,6 +89,15 @@ ol{
     margin-block: 4vh;
     list-style:none ;
 }
+textarea{
+    margin: 2vw;
+    padding-inline:10px;
+    padding-block: 5px;
+    margin-block: 14px;
+    height: 10vh;
+    width: 40vw;
+    border-radius: 10px;
+}
 #submit{
     margin-block: 2vh;
     font-size: large;
@@ -101,15 +110,21 @@ ol{
 }
 .Mycard_container{
     box-sizing: border-box;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
+    opacity: 0;
+    pointer-events: none;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     background-color:rgba(0, 0, 0, 0.3);
+}
+.Mycard_container.show{
+    pointer-events: auto;
+    opacity: 1;
 }
 .Mycard{
     background-color: aliceblue;
@@ -118,15 +133,25 @@ ol{
     border-radius: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .photo{
     max-width: 150px;
+    max-height: 160px;
+    border-radius: 20px;
+    margin-inline: 22.8vw;
+}
+.mytext {
+    margin-inline: 5vw;
+    margin-block: 4vh;
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
 }
 #close{
-    float: inline-end;
     background-color: transparent;
     margin: 20px;
     font-size: xx-large;
     border-radius: 10px;
-    width: 3vw;
+    max-width:30px;
 }

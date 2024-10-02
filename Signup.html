@@ -6,44 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="btn">Home</a>
-            <a href="#about" class="btn">About & Contact</a>
-            <a href="Signup.html" class="btn">Signup</a>
-            <a href="#" class="logo"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="25px"></a>
+            <a href="#about" class="btn">About</a>
+            <a href="Signup.html" class="btn">Contact</a>
+            <a href="#" class="logo" onclick="showit()"><img src="IMG_20211026_162604_586.jpg" alt="H.M." width="25px"></a>
         </nav>
     </header>
     <br>
     <center>
         <div class="box">
-            <h1>Sign-Up</h1>
+            <h1>Contact Me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
             <ol>
-                <li><input type="text" placeholder="  Enter Email ID" id="Uname"></li>
-                <li><input type="password" placeholder="  Enter Your Password" id="password"></li>
-                <li><input type="password" placeholder="  Enter Your Password again" id="password"></li>
+                <input type="hidden" name="access_key" value="caf4c22e-f0cd-4f3e-b5f7-32a9504fcc7b">
+                <li><input type="text" name="name" placeholder="  Enter Your Name" id="name"></li>
+                <li><input type="email" name="email" placeholder="  Enter Your Email ID" id="email"></li>
+                <li><textarea name="message" placeholder="Type Your Message here" id="text" rows="3"></textarea></li>
             </ol>
             <button id="submit" type="submit">submit</button>
+            </form>
         </div>
     </center>
-    <div class="Mycard_container">
+    <div class="Mycard_container" id="Mycard_container">
         <div class="Mycard">
-            <button id="close" type="close">⨯</button>
+            <button id="close" type="close" onclick="closeit()">⨯</button>
+            <br>
             <br>
             <img class="photo" src="IMG20240218224833_00.jpg" alt="H.M.">
             <br>
-            <pre>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Ab, aliquam a cupiditate nemo esse excepturi sapiente,
-                iste consequatur assumenda magnam architecto voluptate ratione beatae,
-                perspiciatis culpa. Tempore deserunt itaque, 
-                doloribus deleniti aliquam eveniet vel rem sunt. 
-                Illo ratione consequuntur magnam expedita quia eos optio accusantium laudantium, quo consequatur in nam.
-                Necessitatibus qui eveniet ut totam quaerat?
-            </pre>
+            <p class="mytext">
+                Hi my name is Hardik Mishra<br>Based in Lucknow capital of our lovely state Uttar Pradesh.<br>Love to make and design responsive websites and webapplications,Python GUI projects etc.<br>
+                Strengths: Ability to learn from mistakes, Self Motivated, Teamwork, Creativity, Dedicated.<br>
+                <br>
+                My Github profile: <a href="https://github.com/HM245" target="_blank">Github Profile</a>
+                <br>
+                My Linkedin Profile: <a href="https://www.linkedin.com/in/hardik-mishra-59435026a/" target="_blank">Linkedin</a>
+                <br>
+                My Freelancer Profile: <a href="https://www.freelancer.com/u/hm245" target="_blank">Freelancer</a> 
+            </p>
         </div>
     </div>
 </body>
