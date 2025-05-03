@@ -15,6 +15,11 @@ header{
   border-radius: 10px;
   padding: 16px;
 }
+@media only screen and (orientation: portrait) {
+  .navbar a.btn{
+    display: none;
+  }
+}
 .navbar a.btn {
   margin-inline: 1.5vw;
   float: inline-start;
@@ -194,3 +199,52 @@ padding: 5px;
   border-radius: 10px;
   max-width:30px;
 }
+@media only screen and (orientation: landscape) {
+  .menueb{
+    display: none;
+  }
+}
+.menueb button{
+  background-color: black;
+  color: antiquewhite;
+  width: 20px;
+  height: 25px;
+  font-size:large ;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+  float: left;
+}
+.menue a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  color: aliceblue;
+  padding: 2vh 5vw;
+}
+.menue a:hover{
+  color: white;
+  text-decoration:underline;
+  transition: 0.3s;
+  transition-timing-function:ease-out;
+  transform: scale(1.2);
+}
+.menue{
+  display: block;
+  position: absolute;
+  background-color: black;
+  margin: 4.5vh 1vw;
+  border-radius: 10px;
+  border: 5px groove whitesmoke;
+  transition: all .5s ease;
+  min-width: 2vw;
+  opacity: 0;
+  pointer-events: none;
+}
+.menue.showit{
+  pointer-events: auto;
+  opacity: 1;
+  position: fixed;
+} 

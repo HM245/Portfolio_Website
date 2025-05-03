@@ -16,15 +16,25 @@
             <a href="#" class="btn">Home</a>
             <a href="#about" class="btn">About</a>
             <a href="Signup.html" class="btn">Contact</a>
+            <a href="Business.html" class="btn">Business Cards</a>
             <a href="#" id="mylogo" class="logo" onclick="showit()"><img src="IMG_20211026_162604_586.jpg" alt="H.M."
                     width="25px"></a>
+            <div class="menueb" onclick="menueshow()">
+                <button>=</button>
+            </div>
         </nav>
     </header>
     <br>
-    <h1>hi, I am Hradik Mishra<br> Front-End Developer based in lucknow,<br> uttar pradesh. </h1>
-    <center><img id="dp" src="IMG_20211026_162604_586.jpg" alt="Profile Image" width="300vw"></center>
-    <h1>My social media links</h1>
-    <center>
+    <div class="menue" id="menue">
+        <a href="#">Home</a><br>
+        <a href="#about">About</a><br>
+        <a href="Signup.html">Contact</a><br>
+        <a href="Business.html" >Business Cards</a>
+    </div>
+    <h1 onclick="menuehide()">hi, I am Hradik Mishra<br> Front-End Developer based in lucknow,<br> uttar pradesh. </h1>
+    <center onclick="menuehide()"><img id="dp" src="IMG_20211026_162604_586.jpg" alt="Profile Image" width="300vw"></center>
+    <h1 onclick="menuehide()">My social media links</h1>
+    <center onclick="menuehide()">
         <div class="links">
             <a href="https://www.youtube.com/@techwithlinux9360" target="_blank"><img
                     src="Screenshot from 2023-12-13 12-46-04.png" alt="LOGO" width="60px">Youtube</a>
@@ -38,7 +48,7 @@
                     alt="LOGO" width="60px">Linkedin</a>
         </div>
     </center>
-    <h1 id="about">About me</h1>
+    <h1 id="about" onclick="menuehide()">About me</h1>
     <p>
         Hi my name is Hardik Mishra B.Sc. from Lucknow University, Business Professional Programmer, Front-End
         Developer, Python, numpy, Tkinter. Based in Lucknow capital of our lovely state Uttar Pradesh. Love to make and
@@ -55,7 +65,7 @@
 
     </p>
     <h1>Skills</h1>
-    <center>
+    <center onclick="menuehide()">
         <div class="lan">
             <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="Python.png"
                     alt="LOGO" width="60px">Python</a>
@@ -68,7 +78,7 @@
             <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="JS.png" alt="LOGO"
                     width="60px">JS</a>
         </div>
-        <div class="lantext">
+        <div class="lantext"  onclick="menuehide()">
             <h2>
                 • Bootstrap (Framework) • Adobe Photoshop • GIMP
                 • Presentations • Microsoft Excel • Web Design
@@ -78,7 +88,7 @@
         </div>
     </center>
     <h1>Projects</h1>
-    <center>
+    <center onclick="menuehide()">
         <div class="Plinks">
             <a href="https://github.com/HM245/Yt_video_downloader" target="_blank" style="color: black;"><img
                     src="social_media_youtube_video_play_icon_128997.png"
@@ -102,10 +112,10 @@
                     width="50px" alt="">Lakshya Classes (Commercial Website)</a><br>
         </div>
     </center>
-    <center>
+    <center onclick="menuehide()">
         <h1>My Qualifications</h1>
     </center>
-    <pre>
+    <pre onclick="menuehide()">
  Class XII with 83.5%
  Lucknow Public School sec-I,
  Lucknow
